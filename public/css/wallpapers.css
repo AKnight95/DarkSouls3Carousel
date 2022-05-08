@@ -1,0 +1,236 @@
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'OptimusPrinceps', sans-serif;
+    color: white;
+  }
+  
+  
+  *{    
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  a, a:hover, a:visited, a:active
+  {
+      color:white;
+      text-decoration:none;
+    transition: 1.5 ease;
+  }
+  
+  a:hover{
+    color: rgb(0, 128, 255);
+  }
+  
+  header{
+    width: 100%;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #navItemsList{
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navItems{
+    margin: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0000008c;
+    padding: 5rem;
+  }
+  
+  #imgFond{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    filter: brightness(30%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #imgAccueil{
+    width: 80%;
+  }
+  
+  #imgFond img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1{
+    font-family: 'OptimusPrinceps', sans-serif;
+    text-transform: uppercase;
+    margin: 5rem;
+  }
+  
+  #intro{
+    text-align: center;
+    padding: 2rem;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 2rem;
+  }
+  
+  img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  
+  i{
+    margin: .5rem;
+    font-size: 2rem;
+  }
+  
+  i:hover
+  {
+    cursor: pointer;
+  }
+  
+  .controls{
+    z-index: 50;
+  }
+  
+  
+  #image > img
+  {
+    width: 80%;
+    /* height: 60vh; */
+    object-fit: contain;
+  }
+  #editableImage
+  {
+    transition: 2.5s;
+  }
+  .rotateLeft
+  {
+    /* transform: scale(120%);      */
+  }
+  
+  .rotateRight
+  {
+    /* transform: scale(120%);        */
+  }
+  
+
+  
+  /***************FOOTER******************/
+  
+  
+  footer {
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/RingedKnight.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .socialMedia{
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socialMedia li{
+    margin: 2rem;
+  }
+  
+  /*************Carousel*******************/
+
+  .carousel {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  
+  .slides {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1000ms;
+  }
+
+  .slide img{
+    height: 80%;
+  }
+ 
+  
+  .slide[data-state=active] {
+    display: block;
+  }
+  
+  .indicators {
+    position: absolute;
+    bottom: 11%;
+    right: 20px;
+  }
+
+  .description{
+    font-size: 15px;
+    padding: 2rem;
+    height: 20%;
+    text-align: left;
+  }
+
+  .description h2{
+      margin-bottom: 2rem;
+  }
+  
+  .indicator {
+      cursor: pointer;
+  }
+
+  .controls{
+    position: absolute;
+    bottom: -80%;
+  }
+  
